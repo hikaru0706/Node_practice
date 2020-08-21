@@ -12,7 +12,6 @@ module.exports={
           for (var i = 1; i <= quiz.getNumOfQuiz(); i++) {
             ResponseAnswers.push(quiz.getAnswers(i));
       }
-         console.log(quiz._quizzes[0]);
             res.send({
               quiz,
               Answers:ResponseAnswers
@@ -21,11 +20,3 @@ module.exports={
     }
 };
 
-// json.results.forEach(function({category,type,difficulty,question,correct_answer,incorrect_answers}){
-//         finalResponse.category.push(category);
-//         finalResponse.type.push(type);
-//         finalResponse.difficulty.push(difficulty);
-//         finalResponse.question.push(question);
-//         finalResponse.correct_answer.push(correct_answer);
-//         finalResponse.incorrect_answers.push(incorrect_answers);
-//     });
